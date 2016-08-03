@@ -44,14 +44,14 @@ std::vector<std::string> lex(FILE* fp)
                 b += file.at(C);
                 endup.push_back(temptoke);
                 endup.push_back(b);
-                inq = false;
+                inq = true;
                 b = ""
             }else{
                 b += file.at(C);
                 if(b == "'"){
                     endup.push_back(temptoke);
                     endup.push_back(b);
-                    inq = false;
+                    inq = true;
                     b = "";
                 }else{
                     temptoke += file.at(C);
