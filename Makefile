@@ -6,7 +6,7 @@ lex:
 	g++ -C Lex/Lexer.cpp
 
 Parser:
-	g++ -C Parser/Parse.cpp
+	g++ -C Parser/parser.cpp
 
 Macro:
 	g++ -C Parser/Macro.cpp 
