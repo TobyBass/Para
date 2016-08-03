@@ -40,6 +40,23 @@ std::vector<std::string> lex(FILE* fp)
             }
         }
         else {
+                        if(file.at(C) == '"'){
+                b += file.at(C);
+                endup.push_back(temptoke);
+                endup.push_back(b);
+                inq = false;
+                b = ""
+            }else{
+                b += file.at(C);
+                if(b == "'"){
+                    endup.push_back(temptoke);
+                    endup.push_back(b);
+                    inq = false;
+                    b = "";
+                }else{
+                    temptoke += file.at(C);
+                    b = "";
+                }
             if (file.at(C) == ' ' || file.at(C) == '\t') {
                 C++;
             }
