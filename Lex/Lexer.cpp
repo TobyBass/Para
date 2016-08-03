@@ -14,13 +14,29 @@ std::vector<std::string> lex(FILE* fp)
     }
     std::string file = a;
     std::string temptoke;
+    std::string b = "";
     std::vector<std::string> endup;
-    std::string c[] = {"byte", "int", "bool", "string", "if", "while", "for", "else", "class", "fn", "unsigned", "signed", "define", "return", "const", "import", "null", "asm", "float", "goto", "false", "true", "xor", "new", "short", "public", "private", "break", "do", "op", "object", "vector", "delete", "try", "catch", "size", "long", "double"};
+    std::string c[] = {"byte", "int", "bool", "string", "if", "while", "for", "else", "class", "fn", "unsigned", "signed", "define", "return", "const", "import", "null", "asm", "float", "goto", "false", "true", "xor", "new", "short", "public", "private", "break", "do", "op", "object", "vector", "delete", "try", "catch", "size", "long", "double", "protected", "alloc", "enum", "restore", "endif", "static"};
     std::vector<std::string> lexic;
     for (int C; C < file.size(); C++) {
         if (inq) {
             if(file.at(C) == '"'){
+                b += file.at(C);
+                endup.push_back(temptoke);
+                endup.push_back(b);
                 inq = false;
+                b = ""
+            }else{
+                b += file.at(C);
+                if(b == "'"){
+                    endup.push_back(temptoke);
+                    endup.push_back(b);
+                    inq = false;
+                    b = "";
+                }else{
+                    temptoke += file.at(C);
+                    b = "";
+                }
             }
         }
         else {
