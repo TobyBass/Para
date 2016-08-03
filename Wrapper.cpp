@@ -1,6 +1,9 @@
-#include "Lex/Lexer.h"
+#include "Define.h"
+#include <vector>
+#include <string>
+#include <stdio.h>
 
-
+extern "C" std::vector<std::string> lex(FILE *)
 
 int main(int argc, const char* argv[]){
   FILE* source;
@@ -28,7 +31,7 @@ int main(int argc, const char* argv[]){
   			printf(ANSI_COLOR_RED "Fatal Error!" ANSI_COLOR_RESET " No such input file found as ", argv[1], "\n");
   			return 0;
   		}else{
-  			parse(macro(lex(source), false), false);
+  			
   		}
   	}else{
   		for(int i; i < argc; i++){

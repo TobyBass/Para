@@ -1,12 +1,20 @@
 
 Para: 
-
+	g++ -O Para Wrapper.cpp Lex.o
 
 lex:
-
+	g++ -C Lex/Lexer.cpp
 
 Parser:
+	g++ -C Parser/Parse.cpp
 
-elf:
+Macro:
+	g++ -C Parser/Macro.cpp 
 
-bin:
+compiler:
+	g++ -C Parser/Compiler.cpp
+
+#debugger:
+
+#dissasm:
+
