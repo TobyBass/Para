@@ -1,2 +1,0 @@
-# Para
-A compiled language
