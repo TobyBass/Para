@@ -1,0 +1,14 @@
+﻿  Wrapper.cpp
+c:\users\toby\documents\github\para\para\wrapper.cpp(31): warning C4474: 'printf' : too many arguments passed for format string
+  c:\users\toby\documents\github\para\para\wrapper.cpp(31): note: placeholders and their parameters expect 0 variadic arguments, but 2 were provided
+  parser.cpp
+c:\users\toby\documents\github\para\para\parser\parser.cpp(24): warning C4018: '<': signed/unsigned mismatch
+c:\users\toby\documents\github\para\para\parser\parser.cpp(44): warning C4018: '<': signed/unsigned mismatch
+c:\users\toby\documents\github\para\para\parser\parser.cpp(63): warning C4018: '<': signed/unsigned mismatch
+c:\users\toby\documents\github\para\para\parser\parser.cpp(72): warning C4474: 'printf' : too many arguments passed for format string
+  c:\users\toby\documents\github\para\para\parser\parser.cpp(72): note: placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+c:\users\toby\documents\github\para\para\parser\parser.cpp(132): warning C4474: 'printf' : too many arguments passed for format string
+  c:\users\toby\documents\github\para\para\parser\parser.cpp(132): note: placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+  Generating Code...
+  Para.vcxproj -> C:\Users\toby\Documents\GitHub\Para\Para\Debug\Para.exe
+  Para.vcxproj -> C:\Users\toby\Documents\GitHub\Para\Para\Debug\Para.pdb (Partial PDB)
