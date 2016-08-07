@@ -1,17 +1,10 @@
 #pragma once
-
-#include <Windows.h>
 #include <vector>
 #include <string>
 #include <stdio.h>
+#include <Windows.h>
 
-std::vector<std::string> Parse(std::vector<std::string> );
-extern std::vector<std::string> lex(FILE *);
-extern  int data;
-
-
-HANDLE s = GetStdHandle(STD_OUTPUT_HANDLE);
-
+extern HANDLE s;
 
 enum {
 	BLACK = 0,
@@ -31,4 +24,3 @@ enum {
 	YELLOW = FOREGROUND_INTENSITY | FOREGROUND_RED | FOREGROUND_GREEN,
 	WHITE = FOREGROUND_INTENSITY | FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE,
 };
-

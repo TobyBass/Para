@@ -1,0 +1,10 @@
+﻿  Wrapper.cpp
+c:\users\toby\documents\github\para\para\wrapper.cpp(29): warning C4474: 'printf' : too many arguments passed for format string
+  c:\users\toby\documents\github\para\para\wrapper.cpp(29): note: placeholders and their parameters expect 0 variadic arguments, but 2 were provided
+c:\users\toby\documents\github\para\para\wrapper.cpp(8): warning C4101: 'output': unreferenced local variable
+c:\users\toby\documents\github\para\para\wrapper.cpp(6): warning C4101: 'format': unreferenced local variable
+c:\users\toby\documents\github\para\para\wrapper.cpp(7): warning C4101: 'debugger': unreferenced local variable
+c:\users\toby\documents\github\para\para\wrapper.cpp(10): warning C4101: 'DI': unreferenced local variable
+c:\users\toby\documents\github\para\para\wrapper.cpp(5): warning C4101: 'verbose': unreferenced local variable
+  Para.vcxproj -> C:\Users\toby\Documents\GitHub\Para\Para\Debug\Para.exe
+  Para.vcxproj -> C:\Users\toby\Documents\GitHub\Para\Para\Debug\Para.pdb (Partial PDB)
