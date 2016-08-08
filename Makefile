@@ -1,6 +1,4 @@
 
-Para: 
-	g++ -O Para Wrapper.cpp Lex.o
 
 lex:
 	g++ -C Lex/Lexer.cpp
@@ -14,7 +12,5 @@ Macro:
 compiler:
 	g++ -C Parser/Compiler.cpp
 
-#debugger:
-
-#dissasm:
-
+Para: 
+	g++ -o Para Wrapper.cpp Lex.o Compiler.o Macro.o parser.o
