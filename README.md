@@ -1,2 +1,2 @@
 # Para
-A compiled language
+A low level compiled language equipped with pointers and inline asm

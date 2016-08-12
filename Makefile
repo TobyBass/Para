@@ -1,16 +1,19 @@
-
+all: lex Parser Macro MSCG Para clean
 
 lex:
-	g++ -C Lex/Lexer.cpp
+	g++ -std=c++11 -c Lex/Lexer.cpp
 
 Parser:
-	g++ -C Parser/parser.cpp
+	g++ -o parse.o -std=c++11 -c Parser/parse.cpp
 
 Macro:
-	g++ -C Parser/Macro.cpp 
+	g++ -std=c++11 -c Parser/Macro.cpp 
 
-compiler:
-	g++ -C Parser/Compiler.cpp
+MSCG:
+	g++ -std=c++11 -c Parser/Compiler.cpp
 
-Para: 
-	g++ -o Para Wrapper.cpp Lex.o Compiler.o Macro.o parser.o
+Para: Lexer.o Compiler.o Macro.o parse.o
+	g++ -std=c++11 -o Para Wrapper.cpp Lexer.o Compiler.o Macro.o parse.o
+
+clean:
+	\rm *.o *~ Para
