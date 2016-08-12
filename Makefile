@@ -4,7 +4,7 @@ lex:
 	g++ -std=c++11 -c Lex/Lexer.cpp
 
 Parser:
-	g++ -o parse.o -std=c++11 -c Parser/parse.cpp
+	g++ -std=c++11 -c Parser/parse.cpp
 
 Macro:
 	g++ -std=c++11 -c Parser/Macro.cpp 
@@ -12,7 +12,7 @@ Macro:
 MSCG:
 	g++ -std=c++11 -c Parser/Compiler.cpp
 
-Para: Lexer.o Compiler.o Macro.o parse.o
+Para: Lexer.o Compiler.o Macro.o Parser.o
 	g++ -std=c++11 -o Para Wrapper.cpp Lexer.o Compiler.o Macro.o parse.o
 
 clean:
